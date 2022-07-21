@@ -43,6 +43,11 @@ body {
     }
 }
 
+.sec {
+    height: 93vh;
+    width: 100vw;
+}
+
 .footer {
     position: fixed;
     display: flex;
@@ -129,7 +134,7 @@ body {
 
 @media (max-width: 575px) {
     .sec-projects {
-        height: 95vh;
+        height: 93vh;
         width: 100vw;
         display: flex;
         align-items: center;
