@@ -1,0 +1,106 @@
+$main-bg-color: #f3f3f3;
+
+$main-blue: #1c1ca6;
+
+$main-text-color: #042a2b;
+
+.main-menu {
+    margin-bottom: 0;
+    li {
+        list-style: none;
+        display: inline;
+        margin: 0 1rem;
+        
+        a {
+            color: $main-blue;
+            text-decoration: none;
+            &:hover {
+                text-shadow: 0px 0px 0.8rem rgba($color: $main-blue, $alpha: 0.4);
+            }
+        }
+    }
+}
+
+.img-placeholder {
+    font-size: 15rem;
+}
+
+// Button
+
+.main-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    color: rgba($color: $main-bg-color, $alpha: 1);
+    background-color: rgba($color: $main-blue, $alpha:1);
+    border-radius: 1.15rem;
+    
+    &:hover {
+        box-shadow: 0 0 0.8rem rgba($color: $main-blue, $alpha:0.4);
+    }
+}
+
+.socials-btn {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border: 1px solid rgba($color: $main-blue, $alpha:1);
+    color: rgba($color: $main-text-color, $alpha:1);
+    background-color: rgba($color: $main-bg-color, $alpha:1);
+    border-radius: 0.75rem;
+    width: 100%;
+    &:hover {
+        box-shadow: 0 0 0.3rem rgba($color: $main-blue, $alpha:0.4);
+    }
+    a {
+        &:link {
+            text-decoration: none;
+            color: $main-text-color;
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.message {
+    resize: none;
+    margin: 1rem 0;
+    border: 1px solid rgba($color: $main-blue, $alpha:1);
+    height: 8rem;
+    background-color: $main-bg-color;
+    &:hover {
+        background-color: #fafafa
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: #fafafa;
+        border: 2px solid rgba($color: $main-blue, $alpha:0.8);
+    }
+
+    textarea {
+        font-weight: 500;
+        ::selection {
+            color: white;
+        }
+    }
+}
+
+.send-btn {
+    @extend .main-btn;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.creds {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: center;
+        a {
+            &:link {
+                text-decoration: none;
+                color: $main-text-color;
+            }
+        }
+}
