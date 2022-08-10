@@ -230,6 +230,9 @@ body {
   .sec-projects .div-projects .project .image:hover {
     opacity: 0.5;
   }
+  .footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
